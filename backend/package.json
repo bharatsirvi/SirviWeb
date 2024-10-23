@@ -1,0 +1,32 @@
+{
+  "name": "sirviapp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --experimental-modules index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "envdot": "^0.0.3",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.4",
+    "twilio": "^5.1.0"
+  }
+}

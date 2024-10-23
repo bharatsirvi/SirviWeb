@@ -1,0 +1,25 @@
+
+GET http://localhost:8080/
+# GET http://localhost:8080/user
+# GET http://localhost:8080/user/10
+
+# POST http://localhost:8080/user
+
+# Content-Type: application/json
+ { "name": "John Doe",
+    "father_name": "Michael Doe",
+    "gender": "Male",
+    "dob": "1990-05-20",
+    "mobile": "1234567890",
+    "email": "johndoe@example.com",
+    "medium": "English",
+    "studyAt": "rtu",
+    "study_level": "college",
+    "college_year": 3,
+    "gotra_id": "66420ede8612dfb9db312ba1",
+    "study_place": "kota",
+    "study_type": "Coaching",
+    "profile_pic": "https://example.com/profile_pic.jpg",
+    "village": "Village ABC",
+    "addedBy": "6641b5b03a37b666e0ceb6c3"
+}
