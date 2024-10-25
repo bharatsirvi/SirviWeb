@@ -19,98 +19,79 @@
 
 export const gotraOptions = [
   {
-    _id: "6654567df08eaa7653acd46f",
-    name: "Parmar (Panwar)",
-    kuldevi: "Arbuda Devi/ Adhar Mata"
+    label: "Parmar (Panwar)",
+    value: "Parmar (Panwar)"
   },
   {
-    _id: "6654567df08eaa7653acd472",
-    name: "Hambad",
-    kuldevi: "Arbuda Devi/ Adhar Mata"
+    label: "Hambad",
+    value: "Hambad"
   },
   {
-    _id: "6654567df08eaa7653acd474",
-    name: "Rathore",
-    kuldevi: "Naganechi/ Chakreshwari/ Ratheshwari/ Naganechiya Mata"
+    label: "Rathore",
+    value: "Rathore"
   },
   {
-    _id: "6654567df08eaa7653acd47a",
-    name: "Muleva",
-    kuldevi: "Ashapura Mata"
+    label: "Muleva",
+    value: "Muleva"
   },
   {
-    _id: "6654567df08eaa7653acd475",
-    name: "Barfa",
-    kuldevi: "Naganechi/ Chakreshwari/ Ratheshwari/ Naganechiya Mata"
+    label: "Barfa",
+    value: "Barfa"
   },
   {
-    _id: "6654567df08eaa7653acd479",
-    name: "Septa",
-    kuldevi: "Ashapura Mata"
+    label: "Septa",
+    value: "Septa"
   },
   {
-    _id: "6654567df08eaa7653acd480",
-    name: "Solanki",
-    kuldevi: "Kshem Kari (Kheemaj) Mataji"
+    label: "Solanki",
+    value: "Solanki"
   },
   {
-    _id: "6654567df08eaa7653acd481",
-    name: "Parihar",
-    kuldevi: "Gajan Mata"
+    label: "Parihar",
+    value: "Parihar"
   },
   {
-    _id: "6654567df08eaa7653acd470",
-    name: "Kag",
-    kuldevi: "Arbuda Devi/ Adhar Mata"
+    label: "Kag",
+    value: "Kag"
   },
   {
-    _id: "6654567df08eaa7653acd471",
-    name: "Bhyal",
-    kuldevi: "Arbuda Devi/ Adhar Mata"
+    label: "Bhyal",
+    value: "Bhyal"
   },
   {
-    _id: "6654567df08eaa7653acd477",
-    name: "Choyal",
-    kuldevi: "Ashapura Mata"
+    label: "Choyal",
+    value: "Choyal"
   },
   {
-    _id: "6654567df08eaa7653acd47d",
-    name: "Aglecha",
-    kuldevi: "Sundha Mata"
+    label: "Aglecha",
+    value: "Aglecha"
   },
   {
-    _id: "6654567df08eaa7653acd47c",
-    name: "Chavadiya",
-    kuldevi: "Ashapura Mata"
+    label: "Chavadiya",
+    value: "Chavadiya"
   },
   {
-    _id: "6654567df08eaa7653acd47b",
-    name: "Mogrecha",
-    kuldevi: "Ashapura Mata"
+    label: "Mogrecha",
+    value: "Mogrecha"
   },
   {
-    _id: "6654567df08eaa7653acd47f",
-    name: "Khandala",
-    kuldevi: "Ban Mata/ Bayan Mata/ Brahmani Mata"
+    label: "Khandala",
+    value: "Khandala"
   },
   {
-    _id: "6654567df08eaa7653acd476",
-    name: "Chauhan",
-    kuldevi: "Ashapura Mata"
+    label: "Chauhan",
+    value: "Chauhan"
   },
   {
-    _id: "6654567df08eaa7653acd478",
-    name: "Devda",
-    kuldevi: "Ashapura Mata"
+    label: "Devda",
+    value: "Devda"
   },
   {
-    _id: "6654567df08eaa7653acd473",
-    name: "Sindhara",
-    kuldevi: "Arbuda Devi/ Adhar Mata"
+    label: "Sindhara",
+    value: "Sindhara"
   },
   {
-    _id: "6654567df08eaa7653acd47e",
-    name: "Gahlot",
-    kuldevi: "Ban Mata/ Bayan Mata/ Brahmani Mata"
+    label: "Gahlot",
+    value: "Gahlot"
   }
 ];
