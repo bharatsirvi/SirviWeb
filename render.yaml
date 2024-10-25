@@ -9,5 +9,5 @@ services:
       - key: DATABASE_PASSWORD
         value: your_database_password
       - key: TOKEN_SECRET_KEY
-        value: your_token_secret_key
+        value: nndidjakdmdai9mded
     autoDeploy: true
