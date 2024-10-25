@@ -70,7 +70,7 @@ function Students() {
   useEffect(() => {
     const fetchedData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/student");
+        const response = await axios.get(`${process.env.BACKEND_URL}/student`);
         console.log("fetched data", response.data);
         dispatch(setAllStudents(response.data));
         return response.data;

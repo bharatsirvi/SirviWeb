@@ -90,7 +90,7 @@ const UserForm = () => {
     // dispatch(fetchStatusSliceAction.setFetching(true));
     try {
       const response = await axios.put(
-        `http://localhost:8080/user/${userId}`,
+        `${process.env.BACKEND_URL}/user/${userId}`,
         data
         // {
         //   headers: {
@@ -133,7 +133,7 @@ const UserForm = () => {
       const profilePicBase64 = reader.result.split(",")[1];
       try {
         const response = await axios.put(
-          `http://localhost:8080/user/${userId}/profile_pic`,
+          `${process.env.BACKEND_URL}/user/${userId}/profile_pic`,
           {
             profile_pic: profilePicBase64
           },

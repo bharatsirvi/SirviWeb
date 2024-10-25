@@ -83,7 +83,7 @@ const EditBusinessContainer = ({ open, handleClose, business }) => {
     data.added_by = userId;
     delete data.image;
     axios
-      .put(`http://localhost:8080/business/${businessId}`, data, {
+      .put(`${process.env.BACKEND_URL}/business/${businessId}`, data, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -96,7 +96,7 @@ const EditBusinessContainer = ({ open, handleClose, business }) => {
             const businessPicBase64 = reader.result.split(",")[1];
             await axios
               .put(
-                `http://localhost:8080/business/${businessId}/image`,
+                `${process.env.BACKEND_URL}/business/${businessId}/image`,
                 {
                   image: businessPicBase64
                 },

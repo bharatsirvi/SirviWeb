@@ -59,7 +59,7 @@ const AddBusiness = () => {
     );
 
     axios
-      .post("http://localhost:8080/business", data, {
+      .post(`${process.env.BACKEND_URL}/business`, data, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -72,7 +72,7 @@ const AddBusiness = () => {
             const businessPicBase64 = reader.result.split(",")[1];
             await axios
               .put(
-                `http://localhost:8080/business/${businessId}/image`,
+                `${process.env.BACKEND_URL}/business/${businessId}/image`,
                 {
                   image: businessPicBase64
                 },

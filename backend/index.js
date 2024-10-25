@@ -27,7 +27,7 @@ app.use(json({ limit: "50mb" }));
 app.use(cors());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Adjust the origin as necessary
+    origin: "*", // Adjust the origin as necessary
     methods: "GET,PUT,POST,DELETE",
     allowedHeaders: "Content-Type,Authorization,responseType",
   })

@@ -13,12 +13,12 @@ function SirviApp() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/user/${userId}`)
+      .get(`${process.env.BACKEND_URL}/user/${userId}`)
       .then((response) => {
         dispatch(userDataSliceAction.setUser(response.data));
 
         axios
-          .get(`http://localhost:8080/user/${userId}/profile_pic`, {
+          .get(`${process.env.BACKEND_URL}/user/${userId}/profile_pic`, {
             responseType: "blob"
           })
           .then((response) => {

@@ -93,7 +93,7 @@ const AddStudent = () => {
         "............................Student from data..>>>>>>>>>>>>>>",
         data
       );
-      const response = await axios.post(`http://localhost:8080/student`, data, {
+      const response = await axios.post(`${process.env.BACKEND_URL}/student`, data, {
         headers: {
           Authorization: `Bearer ${token}`
         }

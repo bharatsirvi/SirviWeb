@@ -1,6 +1,6 @@
 const getAllGotras = async () => {
   try {
-    const response = await fetch("http://localhost:8080/gotra/");
+    const response = await fetch(`${process.env.BACKEND_URL}/gotra/`);
     const data = await response.json();
     return data;
   } catch (error) {
