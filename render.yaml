@@ -10,6 +10,4 @@ services:
         value: your_database_password
       - key: TOKEN_SECRET_KEY
         value: your_token_secret_key
-    regions:
-      - Oregon, USA
     autoDeploy: true
