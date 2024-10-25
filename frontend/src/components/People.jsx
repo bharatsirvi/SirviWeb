@@ -36,7 +36,7 @@ function People() {
   useEffect(() => {
     const fetchedData = async () => {
       try {
-        const response = await axios.get(`${process.env.BACKEND_URL}/user`);
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/user`);
         console.log("fetched data", response.data);
         dispatch(setAllUsers(response.data));
         return response.data;

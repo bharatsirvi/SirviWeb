@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const deleteStudent = async (studentId) => {
   try {
-    const response = await fetch(`${process.env.BACKEND_URL}/student/${studentId}`, {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/student/${studentId}`, {
       method: "DELETE"
     });
   } catch (error) {
@@ -22,7 +22,7 @@ export const updateStudent = async (studentId, updatedData) => {
   console.log("data after clearing", updatedData);
   try {
     const response = await axios.put(
-      `${process.env.BACKEND_URL}/student/${studentId}`,
+      `${import.meta.env.VITE_BACKEND_URL}/student/${studentId}`,
       updatedData
     );
     console.log("Student updated successfully", response.data);
@@ -36,7 +36,7 @@ export const updateStudent = async (studentId, updatedData) => {
 export const getAllStudentsAddByUser = async (userId) => {
   try {
     let response = await axios.get(
-      `${process.env.BACKEND_URL}/student/?addedBy=${userId}`
+      `${import.meta.env.VITE_BACKEND_URL}/student/?addedBy=${userId}`
     );
     console.log("Students fetched successfully", response.data);
     response.data.map((student) => {

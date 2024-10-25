@@ -93,7 +93,7 @@ const AddStudent = () => {
         "............................Student from data..>>>>>>>>>>>>>>",
         data
       );
-      const response = await axios.post(`${process.env.BACKEND_URL}/student`, data, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/student`, data, {
         headers: {
           Authorization: `Bearer ${token}`
         }

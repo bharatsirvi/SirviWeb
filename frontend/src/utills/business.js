@@ -3,7 +3,7 @@ import axios from "axios";
 export const deleteBusiness = async (businessId) => {
   try {
     const response = await fetch(
-      `${process.env.BACKEND_URL}/business/${businessId}`,
+      `${import.meta.env.VITE_BACKEND_URL}/business/${businessId}`,
       {
         method: "DELETE"
       }
@@ -11,7 +11,7 @@ export const deleteBusiness = async (businessId) => {
     console.log("businesss deleted successfully", response.data);
     try {
       const delIamgeRes = await axios.delete(
-        `${process.env.BACKEND_URL}/business/${businessId}/image`
+        `${import.meta.env.VITE_BACKEND_URL}/business/${businessId}/image`
       );
       console.log("businesss image deleted successfully", delIamgeRes);
     } catch (error) {
@@ -25,12 +25,12 @@ export const deleteBusiness = async (businessId) => {
 };
 // export const getAllBusinessAddByUser = (userId) => {
 //   return axios
-//     .get(`${process.env.BACKEND_URL}/business/?added_by=${userId}`)
+//     .get(`${import.meta.env.VITE_BACKEND_URL}/business/?added_by=${userId}`)
 //     .then(async (response) => {
 //       const businessesWithImages = await Promise.all(
 //         response.data.map(async (business) => {
 //           const imageResponse = await axios.get(
-//             `${process.env.BACKEND_URL}/business/${business._id}/image`,
+//             `${import.meta.env.VITE_BACKEND_URL}/business/${business._id}/image`,
 //             {
 //               // responseType: "blob"
 //             }
@@ -60,13 +60,13 @@ export const deleteBusiness = async (businessId) => {
 export const getAllBusinessAddByUser = async (userId) => {
   try {
     const response = await axios.get(
-      `${process.env.BACKEND_URL}/business/?added_by=${userId}`
+      `${import.meta.env.VITE_BACKEND_URL}/business/?added_by=${userId}`
     );
     const businessesWithImages = await Promise.all(
       response.data.map(async (business) => {
         try {
           const imageResponse = await axios.get(
-            `${process.env.BACKEND_URL}/business/${business._id}/image`,
+            `${import.meta.env.VITE_BACKEND_URL}/business/${business._id}/image`,
             {
               responseType: "blob"
             }

@@ -26,7 +26,7 @@ function Login() {
   const onSubmit = (data) => {
     setAuthStart(true);
     axios
-      .post("http://localhost:8080/auth/login", data)
+      .post(`${import.meta.env.VITE_BACKEND_URL}/auth/login`, data)
       .then((response) => {
         console.log(
           "...............................................",

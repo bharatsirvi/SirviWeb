@@ -81,7 +81,7 @@ function SignUp() {
   const onSubmit = (data) => {
     setAuthStart(true);
     axios
-      .post("http://localhost:8080/auth/signup", data)
+      .post(`${import.meta.env.VITE_BACKEND_URL}/auth/signup`, data)
       .then((response) => {
         console.log("signup data submit response", response);
         enqueueSnackbar("SignUp Successfully Done.", {
