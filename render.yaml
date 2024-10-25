@@ -11,5 +11,5 @@ services:
       - key: TOKEN_SECRET_KEY
         value: your_token_secret_key
     regions:
-      - oregon
+      - Oregon, USA
     autoDeploy: true
