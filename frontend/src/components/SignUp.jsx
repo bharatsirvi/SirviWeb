@@ -237,7 +237,7 @@ function SignUp() {
               color="primary"
               type="submit"
               variant="contained"
-              disabled={!otpVerifyDone}
+              // disabled={!otpVerifyDone}
             >
               Sign Up
             </Button>

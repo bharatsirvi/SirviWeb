@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sirvi-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: DATABASE_PASSWORD
+        value: your_database_password
+      - key: TOKEN_SECRET_KEY
+        value: your_token_secret_key
+    regions:
+      - oregon
+    autoDeploy: true
